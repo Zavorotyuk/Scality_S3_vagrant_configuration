@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/data/zavorotyuk/Scality_S3_vagrant_configuration","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
