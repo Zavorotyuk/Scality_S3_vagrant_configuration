@@ -1,0 +1,5 @@
+ ---
+ - hosts: "all"
+   sudo: yes
+   vars_files:
+     - 'vars/s3_server.yml'
