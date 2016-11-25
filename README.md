@@ -1,14 +1,21 @@
-<!-- 
-### Clone source code
+
 
 ```shell
-git clone https://github.com/scality/S3.git
+git clone https://github.com/Zavorotyuk/Scality_S3_vagrant_configuration.git
 ```
 
 ```shell
-cd
+cd Scality_S3_vagrant_configuration
 ```
 
 ```shell
+vagrant up
+```
+
+```shell
+  cd S3/
+```
+
+```
 npm start
-``` -->
+```
