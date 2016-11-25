@@ -13,6 +13,9 @@ vagrant up
 ```
 
 ```shell
+vagrant ssh
+```
+```shell
   cd S3/
 ```
 
