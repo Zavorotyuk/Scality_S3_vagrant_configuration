@@ -17,8 +17,4 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: "sudo dnf install vim -y"
   config.vm.provision "shell", inline: "cd S3 && sudo npm install"
 
-
-  config.vm.provision :ansible do |ansible|
-    ansible.playbook = "create_s3.yml"
-  end
 end
