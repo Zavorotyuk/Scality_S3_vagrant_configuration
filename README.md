@@ -1,4 +1,4 @@
-### To run s3
+ ### To run s3
 
 ```shell
 git clone https://github.com/Zavorotyuk/Scality_S3_vagrant_configuration.git
@@ -19,7 +19,7 @@ cd S3/
 sudo npm start
 ```
 
-### awscli
+ ### awscli
 
   #### About aws configure  
   http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
