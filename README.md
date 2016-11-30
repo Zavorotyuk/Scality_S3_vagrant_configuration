@@ -34,4 +34,16 @@ boto is a python interface to Amazon Web Services
 ###### Repository https://github.com/boto/boto
 ###### Documentation http://boto.cloudhackers.com/en/latest/#getting-started
 
-##### Intalation
+#### Intalation
+
+###### Install via pip:
+```shell
+$ pip install boto
+```
+
+###### Install from source:
+```shell
+$ git clone git://github.com/boto/boto.git
+$ cd boto
+$ python setup.py install
+```
