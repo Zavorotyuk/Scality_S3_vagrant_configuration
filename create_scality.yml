@@ -1,0 +1,21 @@
+---
+- hosts: "all"
+  sudo: yes
+  tasks:
+    - name: install gcc*
+      dnf: name=gcc* state=latest
+
+    - name: install make
+      dnf: name=make state=latest 
+
+    - name: install npm
+      dnf: name=npm
+
+    - name: install git
+      dnf: name=git state=latest
+
+    - name: clone S3 scality
+      shell: git clone https://github.com/scality/S3
+
+    - name: install S3 scality
+      shell: cd S3 && sudo npm install
