@@ -22,3 +22,6 @@
 
     - name: install S3 scality
       shell: cd S3 && sudo npm install
+
+    - name: config ip for work with bucket
+      shell: cd S3 && sed -i '26s/.*/       "bootstrap": ["192.168.50.4"]  /' config.json
