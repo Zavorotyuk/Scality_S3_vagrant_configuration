@@ -11,11 +11,10 @@
     - name: install npm
       dnf: name=npm
 
-    - name: install git
-      dnf: name=git state=latest
-
-    - name: clone S3 scality
-      shell: git clone https://github.com/scality/S3
+    - name: clone scality.S3 
+      git: repo=https://github.com/scality/S3
+         dest=/home/vagrant/S3
+         force=yes
 
     - name: install S3 scality
       shell: cd S3 && sudo npm install
