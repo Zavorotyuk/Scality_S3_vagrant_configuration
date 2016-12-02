@@ -2,8 +2,8 @@
 - hosts: "all"
   sudo: yes
   tasks:
-    - name: install gcc*
-      dnf: name=gcc* state=latest
+    - name: install g++
+      dnf: name=gcc-c++ state=latest
 
     - name: install make
       dnf: name=make state=latest 
@@ -11,8 +11,12 @@
     - name: install npm
       dnf: name=npm
 
+    - name: install git
+      dnf: name=git state=latest
+
     - name: clone scality.S3 
-      git: repo=https://github.com/scality/S3
+      git: repo=https://github.com/Scality/S3
+         version=master
          dest=/home/vagrant/S3
          force=yes
 
